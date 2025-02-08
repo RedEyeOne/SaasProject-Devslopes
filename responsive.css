@@ -1,0 +1,359 @@
+/* iPads and Tablets - portrait mode */
+@media screen and (max-width: 768px){
+    /* set navbar */
+    #nav-ul {
+        display: none;
+    }
+    .nav-dropdown {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        z-index: 1000;
+        min-height: 1.5rem;
+        min-width: 1.5rem;
+    }
+    .nav-dropdown i {
+        position: absolute;
+        right: 0;
+        align-self: center;
+        color: var(--gradient-grey);
+        font-size: 1.5rem;
+        margin-right: 2rem;
+    }
+    nav {
+        width: 100%;
+    }
+    .nav-right .buy-now {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 300%;
+        left: 36%;
+        justify-self: center;
+        z-index: 1010;
+    }
+    .button-cont {
+        overflow: hidden;
+        min-width: 100vw;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    #nav-ul {
+        display: none;
+        position: absolute;        
+        width: 100vw;
+        gap: 1rem;
+        justify-content: center;
+        left: 0;
+        bottom: -55.3rem;
+        overflow-x: hidden;
+        background-color: var(--white);
+        margin: 0;
+        padding: 0;
+        padding-top: 3rem;
+        padding-bottom: 50rem;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+        border-top: 2px solid var(--warm-grey);
+    }
+    
+    #nav-ul.show {
+        display: block;
+    }
+    
+    #nav-ul li a {
+        display: block;
+        padding: 10px 20px;
+        text-decoration: none;
+    }
+    nav button {
+
+    }
+    
+    /* header */
+    .header-display-container {
+        text-align: center;
+        padding-top: 8rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-display-container .flex-container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+    h1 {
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .key-benefits-text {
+        padding-top: 12rem;
+    }
+    .header-buttons {
+    justify-content: center;
+    }
+    .header-logos {
+        position: relative;
+        left: -11.5%;
+        bottom: -3rem;
+    }
+    /* key benefit cards */
+    .key-benefits-cards {
+        row-gap: 2rem;
+    }
+    .key-benefits-cards .card {
+        flex-wrap: wrap;
+        min-width: 45%;
+        flex: 1 1 45%;
+    }
+    /* software people */
+    .software-people-text {
+        text-align: center;
+    }
+    .software-people-text h3{
+        margin: 0 auto;
+        padding-top: 0;
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .software-people {
+        padding-top: 2rem;
+        flex-direction: column;
+    }
+    .software-people-text .play-video-button {
+        align-self: center;
+        margin-bottom: 2rem;
+    }
+    /* exec director */
+    .director-container {
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        max-width: 70%;
+        margin: 0 auto;
+    }
+    .director-container .director-text {
+        padding-top: 0;
+    }
+    .director-container > * {
+        text-align: center;
+    }
+    /* pricing cards */
+    .pricing-cards-container {
+        flex-wrap: wrap;
+    }
+    .popout-card {
+        min-width: 85%;
+        max-height: 20rem;
+        margin-bottom: 2rem;
+    }
+    /* form section */
+    .blue-bg-form {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .blue-bg-form form {
+        min-width: 82%;
+        position: block;
+        margin: 0 auto;
+    }
+    .hire-us-text.flex-container {
+        padding-top: 0;
+        margin: 0 2rem;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    .hire-us-text h2 {
+        margin-top: 0;
+    }
+    .hire-us-underlined {
+        max-width: 20rem;
+    }
+    .hire-us-left {
+        text-align: left;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    /* footer */
+
+    .footer-link-container {
+        flex-wrap: wrap;
+        flex: nowrap;
+        justify-content: flex-start;
+        padding: 0;
+        margin: 0;
+        flex-direction: row;
+        gap: 5rem;
+    }
+
+    footer .logo {
+        max-width: 15rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    /* nav */
+    #nav-ul {
+        flex-direction: column;
+        bottom: -68.5rem;
+    }
+    .header-right .buy-now {
+        top: 600%;
+    }
+    /* header */
+    .header-logos {
+        position: relative;
+        left: 1%;
+        bottom: -1rem;
+    }
+    /* key benefit cards */
+    .key-benefits-cards .card {
+        min-width: 100%;
+    }
+    /* why font timeline */
+    .why-front hr {
+        display: none;
+    }
+    .why-front .timeline-element {
+        flex-direction: row;
+        gap: 3rem;
+        padding: 0.3rem 2rem;
+    }
+    .timeline {
+        flex-direction: column;
+    }
+    /* video player */
+    .video-player {
+        margin: 0 ;
+        margin-top: 4rem;
+        position: relative;
+    }
+    .video-player img {
+        max-width: 100%;
+        height: auto;
+        z-index: 100;
+    }
+    /* exec director */
+    .exec-director {
+        width: 90%;
+        position: relative;
+        left: -25%;
+    }
+    .director-text img {
+        width: 10rem;
+    }
+    /* trusted by company logos */
+    .black-logo-container {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+    }
+    /* pricing */
+    .pricing h2 {
+        margin-top: 4rem;
+    }
+    .pricing-cards-container {
+        flex-wrap: wrap;
+    }
+    .popout-card {
+        min-width: 77%;
+        max-height: 20rem;
+        margin-bottom: 2rem;
+    }
+    .borderles-card-container {
+        margin: 1rem 2rem;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr ;
+        grid-template-rows: repeat(4, 1fr);
+    }
+    /* hire us  */
+    .hire-us-text.flex-container {
+        flex-direction: column;
+    }
+    .hire-us-text h2 {
+        text-align: center;
+    }
+    .employee-imgs {
+        margin-bottom: 3rem;
+    }
+    .form-grid {
+        margin: 2rem;
+        display: grid;
+        grid-template-areas: 
+            "first"
+            "last"
+            "first2"
+            "last2"
+            "budget"
+            "country"
+            "text-box"
+            "privacy-policy-check"
+            "links"
+            "button";
+        grid-template-columns: repeat(1, 1fr); /* Define 4 equal columns */
+        grid-template-rows: auto;
+        gap: 1rem; 
+    }
+    /* footer */
+    .footer-links {
+        flex-direction: column;
+    }
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .logo {
+        max-width: 50rem;
+    }
+    .footer-link-container {
+        flex-direction: column;
+    }
+    .footer-link-container > * {
+        min-width: 20rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .footer-link-container > div > ul > li{
+        min-width: 25rem;
+        display: flex;
+        flex-grow: 1;
+    }
+    .footer-link-container > div > ul > li > a {
+        margin: 0 auto;
+    }
+    .footer-link-container > div > ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .policy-links {
+        flex-direction: column;
+    }
+    .right-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-right .buy-now {
+        top: 23rem;
+        left: 32%;
+    }
+
+}
